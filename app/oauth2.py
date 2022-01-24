@@ -1,10 +1,10 @@
-from email.utils import collapse_rfc2231_value
+#from email.utils import collapse_rfc2231_value
 from jose import JWTError,jwt
 from datetime import datetime, timedelta
 
 from rsa import verify
 from . import schemas,database,models
-from sqlalchemy import schema 
+#from sqlalchemy import schema 
 from fastapi import status, HTTPException,Depends
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session

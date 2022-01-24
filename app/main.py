@@ -1,20 +1,21 @@
 
-from enum import auto
-from operator import mod
+
+
 #from pyexpat import model
 #import secrets
-from textwrap import indent
-from turtle import pos, title
-from types import new_class
+
+#from turtle import pos, title
+#from types import new_class
 #from typing import Optional, List #to return list of post for sqlalchemy 
-from fastapi import Body, Depends, FastAPI, Response,status, HTTPException
+#from fastapi import Body, Depends, FastAPI, Response,status, HTTPException
+from fastapi import FastAPI
 #from markupsafe import re
 #from random import randrange
 #import psycopg2
-from psycopg2.extras import RealDictCursor
+#from psycopg2.extras import RealDictCursor
 #import time
 #from sqlalchemy.orm import Session
-from . import models,schemas, utils
+#from . import models,schemas, utils
 from app.database import engine, get_db
 ##########################################
 from app.routers import post, postgres,user, auth, vote

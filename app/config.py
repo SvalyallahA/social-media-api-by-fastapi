@@ -1,7 +1,7 @@
-from os import path
+#from os import path
 from pydantic import BaseSettings
 
-from app import database
+#from app import database
 
 class Settings(BaseSettings):
    database_hostname: str
