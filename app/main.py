@@ -46,4 +46,4 @@ app.include_router(vote.router)
 @app.get("/")
 async def root():
     
-    return {"message":"welcome to my simple fastapi project"}
+    return {"message":"HELLO WORLD"}
