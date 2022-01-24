@@ -2,7 +2,7 @@
 from jose import JWTError,jwt
 from datetime import datetime, timedelta
 
-from rsa import verify
+
 from . import schemas,database,models
 #from sqlalchemy import schema 
 from fastapi import status, HTTPException,Depends
