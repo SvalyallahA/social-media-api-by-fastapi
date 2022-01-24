@@ -9,7 +9,7 @@ from .config import settings
 #SQLALCHEMY_DATABASE_URL='postgresql://<username>:<password>@<ip-address/hostname>/<database_name>'
 #SQLALCHEMY_DATABASE_URL=f"postgresql://postgres:tt2191aa@localhost:5432/fastapiDB"
 #SQLALCHEMY_DATABASE_URL=f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
-SQLALCHEMY_DATABASE_URL=f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/fastapiDBalembic"
+SQLALCHEMY_DATABASE_URL=f"postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 #make a session to talk to the DB
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
