@@ -30,7 +30,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins=["https://www.google.com"]#[*] allows every domain
+origins=["*"]#[*] allows every domain
 app.add_middleware(
     CORSMiddleware, # its a function that runs before any request
     allow_origins=origins, # what domain should be able to talk to our api 
