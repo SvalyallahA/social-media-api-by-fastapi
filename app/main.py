@@ -29,6 +29,10 @@ from fastapi.middleware.cors import CORSMiddleware
 #models.Base.metadata.create_all(bind=engine) #SQLALCHEMY / we dont need it because we are using alembic now 
 
 app = FastAPI()
+@app.get("/")
+async def root():
+    
+    return {"message":"HELLO WORLD"}
 origins=["https://www.google.com"]#[*] allows every domain
 app.add_middleware(
     CORSMiddleware, # its a function that runs before any request
